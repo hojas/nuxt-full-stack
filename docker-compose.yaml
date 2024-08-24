@@ -1,0 +1,31 @@
+services:
+  postgres:
+    container_name: nuxt-full-stack-postgres
+    image: postgres:16.4-alpine
+    restart: always
+    ports:
+      - '127.0.0.1:5432:5432'
+    environment:
+      POSTGRES_USER: nuxt_full_stack
+      POSTGRES_PASSWORD: nuxt_full_stack
+      POSTGRES_DB: nuxt_full_stack
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: nuxt-full-stack
+    image: nuxt-full-stack
+    restart: always
+    ports:
+      - '127.0.0.1:8080:3000'
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    links:
+      - postgres
+
+volumes:
+  postgres-data:
