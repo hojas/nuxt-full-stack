@@ -12,16 +12,15 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@trpc/client": "^10.45.2",
-    "@trpc/server": "^10.45.2",
+    "@prisma/nuxt": "^0.0.35",
     "nuxt": "^3.13.0",
-    "trpc-nuxt": "^0.10.22",
-    "vue": "^3.4.38",
-    "zod": "^3.23.8"
+    "vue": "^3.4.38"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.27.1",
+    "@prisma/client": "5.19.0",
     "@types/node": "^22.5.0",
-    "eslint": "^9.9.1"
+    "eslint": "^9.9.1",
+    "prisma": "5.19.0"
   }
 }
