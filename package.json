@@ -2,7 +2,7 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
-  "packageManager": "pnpm@9.12.2",
+  "packageManager": "pnpm@9.12.3",
   "scripts": {
     "migrate": "prisma migrate dev",
     "build": "nuxt build",
@@ -15,15 +15,15 @@
   "dependencies": {
     "@logto/nuxt": "^1.0.1",
     "@prisma/nuxt": "^0.0.35",
-    "nuxt": "^3.13.2",
+    "nuxt": "^3.14.159",
     "vue": "^3.5.12"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.8.0",
-    "@prisma/client": "5.21.1",
-    "@types/node": "^22.8.1",
-    "eslint": "^9.13.0",
-    "prisma": "5.21.1",
-    "sass-embedded": "^1.80.4"
+    "@prisma/client": "5.22.0",
+    "@types/node": "^22.9.0",
+    "eslint": "^9.14.0",
+    "prisma": "5.22.0",
+    "sass-embedded": "^1.80.6"
   }
 }
